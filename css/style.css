@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+--main-color : #0078ff ;
+
+--secondary-color :#f8f9fa 
+}
+
+/* START HOME SECTION */
+
+#home {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../imgs/hero-bg.jpg);
+background-position: center;
+background-size: cover;
+
+}
+
+
+h1 {
+    font-size: 4.5rem;
+}
+
+.title h2 {
+font-size: 2.5rem;
+}
+
+nav.navbar a, nav.navbar a:focus {
+font-size: 1rem;
+color: #fff;
+font-weight: bolder;
+font-family: sans-serif;
+}
+
+nav .logo.navbar-brand {
+
+    font-size: 1.75rem;
+}
+
+.active::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+
+.nav-link:focus, .nav-link:hover {
+    color: #fff;
+}
+ 
+/* END HOME SECTION */
+
+
+/* START ABOUT SECTION */
+ 
+#about {
+    background-color: var(--secondary-color)  ;
+}
+
+
+
+p{
+
+    font-size: 1.25rem;
+    color:#4E4E4E;
+}
+
+#about h5::after {
+content: "";
+width: 20%;
+height: 3px;
+background-color: var(--main-color);
+position: absolute;
+bottom: -8px;
+
+transform: translateX(-150%);
+}
+
+
+
+
+#home h2::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration:  8s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+
+@keyframes typing {
+
+    0%{content: "D |";}
+    2%{content: "Ds |";}
+    4%{content: "Des |";}
+    06%{content: "Desi |";}
+    08%{content: "Desig |";}
+    10%{content: "Design |";}
+    12%{content: "Designe |";}
+    14%{content: "Designer |";}
+    16%{content: "Designe |";}
+    18%{content: "Design |";}
+    20%{content: "Desig |";}
+    22%{content: "Desi |";}
+    24%{content: "Des |";}
+    26%{content: "De |";}
+    28%{content: "D |";}
+    30%{content: "De |";}
+    32%{content: "Del |";}
+    34%{content: "Dele |";}
+    36%{content: "Delev |";}
+    38%{content: "Delevo |";}
+    40%{content: "Delevop |";}
+    42%{content: "Delevope |";}
+    44%{content: "Delevoper |";}
+    46%{content: "Delevoe |";}
+    48%{content: "Delevop |";}
+    50%{content: "Delevo |";}
+    52%{content: "Delev |";}
+    54%{content: "Dele |";}
+    56%{content: "Del |";}
+    58%{content: "De |";}
+    60%{content: "D |";}
+    62%{content: "F |";}
+    64%{content: "Fr |";}
+    66%{content: "Fre |";}
+    68%{content: "Free |";}
+    70%{content: "Freel |";}
+    72%{content: "Freela |";}
+    74%{content: "Freelan |";}
+    76%{content: "Freelanc |";}
+    78%{content: "Freelance |";}
+    80%{content: "Freelancer |";}
+    82%{content: "Freelance |";}
+    84%{content: "Freelanc |";}
+    86%{content: "Freelan |";}
+    88%{content: "Freela |";}
+    90%{content: "Freel |";}
+    92%{content: "Free |";}
+    94%{content: "Fre |";}
+    96%{content: "Fr |";}
+    98%{content: "F |";}
+}
+
+/* END ABOUT SECTION */
+
+/* START SERVICES SECTION  */
+
+
+#services {
+    background-color: var(--secondary-color) ;
+}
+
+#services h3::after {
+    content: "";
+    width: 4%;
+    height:4px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#services h2 {
+    font-size: 1.4rem;
+    color: #1E1E1E;
+    
+}
+
+#services .item p {
+    font-size: 1rem;
+}
+
+#services .icon {
+    
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border: 1px solid var(--main-color);
+   
+   position: absolute;
+   left: 35%;
+   bottom: 1.25rem;
+   box-shadow: rgb(0, 120, 255) 0px 0px 0px 10px;
+   transition: all 0.4s;
+}
+
+.icon:hover {
+    background-color: var(--main-color);
+    color: #fff !important;
+    box-shadow: rgba(0, 120, 255,0.3) 0px 0px 0px 10px;;
+}
+
+#services .item {
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 15px 8px -10px;
+}
+
+
+/* END SERVICES SECTION  */
+
+/* START OVERLAY SECTION */
+#overlay {
+    background-image: linear-gradient(rgba(0, 120, 255,0.8),rgba(0, 120, 255,0.8)), url(../imgs/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    
+
+
+
+#overlay .icon1 {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: 2px solid var(--main-color);
+    font-size: 20px;
+    box-shadow: #fff 0px 0px 0px 10px;
+    position: absolute;
+    left: 40%;
+    color: #fff !important;
+
+}
+
+/* END OVERLAY SECTION */
+
+/* START PORTFOLIO SECTION */
+#portfolio {
+    background-color: var(--secondary-color);
+}
+
+#portfolio h3::after {
+content: "";
+width: 4%;
+height:5px ;
+background-color: var(--main-color);
+position: absolute;
+bottom: -50px;
+left: 49%;
+
+}
+
+#portfolio .portfolio-item span {
+    color: var(--main-color);
+    font-size: 12.8px;
+}
+
+#portfolio .portfolio-item {
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 15px 8px -10px;
+}
+
+.portfolio-icon{
+    width: 3rem;
+    height: 3rem;
+    font-size: 25px;
+    border: 3px solid var(--main-color);
+    color: var(--main-color);
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+}
+.portfolio-item figure img {
+    transition: all 1s;
+}
+
+.portfolio-item figure:hover img {
+    transform: scale(1.3);
+   
+
+}
+
+
+
+
+
+/* END PORTFOLIO SECTION */
+
+
+/* START overlay2 SECTION */
+
+#overlay2 {
+    background-image: linear-gradient(rgba(0, 120, 255,0.7),rgba(0, 120, 255,0.7)),url(../imgs/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#overlay2 img {
+    width: 9rem;
+    height: 9rem;
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    
+}
+
+
+/* END overlay2 SECTION */
+
+
+/* START BLOG SECTION */
+
+#blog {
+    background-color: var(--secondary-color);
+}
+
+#blog h3::after {
+content: "";
+width: 4%;
+height: 4px ;
+background-color: var(--main-color);
+position: absolute;
+bottom: -50px;
+left: 48%;
+}
+
+
+ #blog .left img {
+    width: 2rem;
+    height: 2rem;
+ }
+
+#blog .left:hover a {
+    color: var(--main-color) !important;
+    transition: all 0.5s;
+}
+
+#blog p{
+    line-height: 20px;
+}
+
+
+
+/* END BLOG SECTION */
+
+
+
+/* START CONTACT SECTION */
+#contact {
+    background-image:linear-gradient(rgba(0, 120, 255,0.6),rgba(0, 120, 255,0.6)), url(../imgs/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact h5::before {
+    content: "";
+    width: 22%;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+
+}
+
+#contact .btn:hover {
+    background-color:rgba(0, 120, 255,0.9) ;
+}
+
+
+.list ul li i{
+color: var(--main-color);
+}
+
+.list ul li {
+    list-style-type: none;
+}
+
+.contact-icon {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--main-color);
+}
+
+/* END CONTACT SECTION */
+
+
